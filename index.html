@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <title>Todos App</title>
+  </head>
+  <body>
+    <h1 class="app_heading">todos App</h1>
+    <ul class="todos_list" data-todos_list></ul>
+    <div class="add_todo">
+      <button class="add_todo_btn" data-add_todo_btn>Create A Todo</button>
+    </div>
+
+    <template data-todo_templates>
+      <div>
+        <h2>No Todos Found, create Some Instead</h2>
+        <h1>&DoubleDownArrow;</h1>
+      </div>
+      <li class="todo">
+        <input type="checkbox" class="todo_completed" />
+        <input
+          type="text"
+          placeholder="Add Todo then press Enter."
+          class="todo_text"
+        />
+      </li>
+    </template>
+  </body>
+</html>
